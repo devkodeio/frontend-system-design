@@ -16,3 +16,48 @@
 
 ---
 
+- [Engineering Design](#engineering-design)
+- [High Level Design](#hld)
+- [Low level Design](#lld)
+
+### Engineering Design
+
+- Team size
+- User base
+- Knowledge base
+- Client expectations
+- Open source vs proprietary
+- Documentation
+
+### HLD
+
+- Platform
+- SPA vs MPA
+- SSR, SSG
+- Tech stack
+- SEO
+- CI/CD
+- Server side architecture
+- State management
+- Internationalization
+- Unit testing, E2E testing
+- Integration (linter, formatting, pre-commits)
+- Security
+- Authentication and Authorization
+
+### LLD
+
+- Folder structure
+- Type rules
+- Mobile first approach
+- System breakdown
+- Component Design
+- Form development
+- Storage management
+- Routing management
+- CSS optimizations
+- Lazy loading of modules
+- Accessibility
+- Image optimizations
+- Pagination, Debouncing, Throttling
+- Performance: FCP, LCP, TTI, CLS
