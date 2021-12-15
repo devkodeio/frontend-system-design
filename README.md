@@ -29,46 +29,151 @@ Frontend System Design guide attempts to cover the various factors to be conside
 
 ### Engineering Design
 
-- Team size
-- User base
-- Knowledge base
+- Requirements analysis
+
+  Understand the requirements, clarify, brain storm, refine, PRD,
+
 - Client expectations
+
+  Get the expectations, timelines, focus areas, B2B, B2C, MVP
+
+- Team size and expertise
+
+  Plan the team size, work distribution, development strategies, team skills
+
+- User base/Target audience
+
+  Location, Devices, Internet speed, Technical user?
+
 - Open source vs proprietary
-- Documentation
+
+  Licenses, cost, support, community, ease of use, documentation
+
+- Documentation and sign-off
+
+  Develop documentation, UX requirements, client approval
+
+- Development methodology
+
+  Agile / waterfall, TDD, release strategies
 
 ---
 
 ### HLD
 
 - Platform
+
+  Web, mobile, PWA, Tablet
+
 - SPA vs MPA
 - SSR, SSG
+
+  Need for ssr, challenges, drawbacks, libraries
+
+- UX
+
+- Instrumentation
+
+  Error logging, Debugging, user tracking, analytics
+
 - Tech stack
+
+  backend integration, compatibility,
+
 - SEO
+
+  Optimization, opengraph
+
 - CI/CD
+
+  Deployment setup, backup strategies, cloud services
+
 - Server side architecture
+
+  API design, Subdomains, SSO,
+
 - State management
+
+  state handling
+
 - Internationalization
+
 - Unit testing, E2E testing
+
+  Approach, logic testing, UI testing, coverage, report
+
 - Integration (linter, formatting, pre-commits)
+
+  Rules, automation, standards
+
 - Security
-- Authentication and Authorization
+
+  XSS, Token, SSL, cookies, authentication and authorization
+
+- Bundling
+
+  build customization, tree shaking, img compress, micro frontend
+
+- Volume
+
+  QPS, Load testing/Stress test
 
 ---
 
 ### LLD
 
 - Folder structure
+
+  Flat, nested, atomic design
+
 - Type rules
+
+  Typescript
+
 - Mobile first approach
+
+  CSS rules, media queries, progressive enhancements
+
 - System breakdown
+
+  Components, modules, interfaces, Design Patterns
+
 - Component Design
+
+  Inputs, Outputs, CSS in JS
+
 - Form development
+
+  Form libraries
+
 - Storage management
+
+  Local storage, session, indexed DB, caching
+
 - Routing management
+
+  Routing, gaurds, redirection,
+
 - CSS optimizations
+
+  animations, reuse, css variables, layout,
+
 - Lazy loading of modules
+
+  loading, preloading,
+
 - Accessibility
+
+  contrast, screen readers, Crawling, Ranking, Sitemap, H1 Tag, Meta Keywords, Organic approach, alt, 301 Redirects (bad for SEO), Search visibility, Semantic tags, Open graph protocol
+
 - Image optimizations
+
+  screen size, image type, lazy loading,
+
 - Pagination, Debouncing, Throttling
+
+  Data control, request optimization
+
 - Performance: FCP, LCP, TTI, CLS
+
+  First load, next loads, 1st fold, CRP, shifts, Lighthouse score, RAIL model
