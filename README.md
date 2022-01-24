@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>Frontend System Design Guidev</h1>
+	<h1>Frontend System Design Guide</h1>
 	<h3>Interview checklist & style guide</h3>
     	<a href="#javascript-modern-interview-code-challenges-by-topic"><img src="cover.png" alt="banner" width="300px"/></a>
 </div>
