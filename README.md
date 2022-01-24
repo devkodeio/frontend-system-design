@@ -88,9 +88,13 @@ Frontend System Design guide attempts to cover the various factors to be conside
 
 ### High Level Design details
 
+<br>
+
 **Product Requirement Document (PRD) / Design Document**
 - Identify Scope/Requirement
 - Review your understanding with stakeholders
+
+<br>
 
 **Discuss about Design/Wireframe**
 - Think like an architect.
@@ -98,16 +102,22 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Discuss about Edge cases.
 - Robustness: Handle SPOF (Single Point of Failure) ex: Monitoring, Logging
 
+<br>
+
 **Identify Business**
 - Is it B2B (business-to-business)?
 - Is it B2C (business-to-consumer)?
 - Is it Internal Product?
 - Is it Customer facing product?
 
+<br>
+
 **Identify Platform**
 - Desktop
 - Mobile
 - Tablet
+
+<br>
 
 **Identify Users (Know your audience)**
 - Conduct surveys
@@ -116,19 +126,27 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - End Users knowledge base (ex: Technical user)
 - Pilot Product (sometimes to understand audience)
 
+<br>
+
 **Identify Design Approach**
 - Responsive vs Adaptive design
 - Desktop first vs Mobile first
 
+<br>
+
 **Identify APIs**
 - Rest APIs / Graph APIs / RPC
 - JSON / Protocol buffers
+
+<br>
 
 **Role based management**
 - Large system needs roles based access and permissions
 - Authentication and Authorization
 - Read/Write/View Permissions
 - Discuss about Routes/Component access
+
+<br>
 
 **Identify Right Platform (compare frameworks based on the use case)**
 - Single Page Applications (Unsuitable for Blogs/News based products)
@@ -152,6 +170,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
     - Is your application Canvas (or SVG) heavy? (Figma, Draw.io)
     - Is your application webRTC heavy? (Video streaming)
 
+<br>
+
 **Identify User Flow**
 - Discuss vision of a product.
 - Do we need to build from scratch or we can leverage some existing functionalities
@@ -161,11 +181,15 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Discuss edge cases.
 - Discuss failing scenarios
 
+<br>
+
 **Identify MVP (Minimum Viable Product)**
 - Problem -> Solution -> Build MVP -> MVP to Customers
 - Discuss MVP phase with product manager
 - Discuss roadmaps and divide product in milestones
 - After MVP release there can be a slight change in design/approach to make the product better
+
+<br>
 
 **Volume of Operations**
 - Discuss about the end users of the product
@@ -173,6 +197,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Discuss about Load testing/Stress testing
 - Inject analytics in application (ex: Google analytics, Sentry, NewRelic)
 - Analytics data helps us to scale the system
+
+<br>
 
 **SEO (Search Engine Optimization)**
 - Crawling
@@ -187,6 +213,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Robots.txt
 - Open graph protocol (https://ogp.me/) for social graph
 
+<br>
+
 **Component Based Design**
 - Component wise deployment cycle (CI/CD)
 - Monolith vs Microservice architecture
@@ -194,10 +222,14 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Static components vs Dynamic components 
 - IFrame/Shell approach
 
+<br>
+
 **State Management**
 - How to maintain state through the application?
 - How to manage users' data?
 - State management Libraries (Redux, Flux, NgRX)
+
+<br>
 
 **Handling APIs**
 - Polling (Short and Long)
@@ -207,6 +239,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Caching GET APIs (Middleware concepts to cache response)
 - Server-Sent Events (SSE)
 
+<br>
+
 **Optimizing Images**
 - Add alt attributes (Images should be descriptive for SEO)
 - Load images based on screen size (img srcset)
@@ -215,6 +249,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Use SVGs for generic dimensions (in case of stretching of images)
 - Discuss about image Sprites for icons
 - Discuss about progressive images (ex: Medium.com)
+
+<br>
 
 **Instrumentation**
 - Measurement and tracking are key for a stable system
@@ -226,9 +262,13 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Sentry (to capture errors)
 - Newrelic (to detect failures)
 
+<br>
+
 **Versioning of artifacts**
 - Artifacts tracking (ex: Confluence)
 - Rollback & backup mechanisms
+
+<br>
 
 **Performance Optimization Techniques**
 - Webpack to optimized/compressed pages (Code splitting)
@@ -243,6 +283,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Meaningful animation
 - Micro interactions
 
+<br>
+
 **Internationalization (i18n) / Localization (i10n)**
 - Localization
 - Numeric, date and time formats
@@ -253,11 +295,15 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Text and graphics vary with different languages and religions, may be subject to misinterpretation or viewed as insensitive
 - Varying legal requirements
 
+<br>
+
  **Accessibility**
 - Alt attributes
 - Aria-labels
 - Multi-device support, slow network speed
 - Color contrast, semantics tags
+
+<br>
 
 **Security**
 - MITM
@@ -266,6 +312,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Clickjacking
 - Content Security Policy (CSP)
 - CORS
+
+<br>
 
 **Quality assurance and control**
 - Stable products are successful
@@ -279,6 +327,8 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Cross browsers testing
 - Cross platform testing
 
+<br>
+
 **Governance**
 - Controlling the workflows and protecting the assets
 - UX Design -> Developers -> Product Managers -> UX Designing -> QA
@@ -286,8 +336,12 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Artifacts/Assets level governance (before go live)
 - like Product Manager approval, Stakeholders approvals
 
+<br>
+
 **Experiment based release cycle**
 - Experiment flag, which can help in the release cycle
+
+<br>
 
 **NFR (Non Functional Requirement)**
 - Discuss about CI/CD (Docker, Pipeline)
