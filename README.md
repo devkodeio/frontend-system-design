@@ -153,141 +153,141 @@ Frontend System Design guide attempts to cover the various factors to be conside
     - Is your application webRTC heavy? (Video streaming)
 
 **Identify User Flow**
-    - Discuss vision of a product.
-    - Do we need to build from scratch or we can leverage some existing functionalities
-    - Discuss about authentication and authorization (Google auth / OAuth)
-    - Interact with the Product manager to understand the scope before designing the application.
-    - Discuss happy scenarios.
-    - Discuss edge cases.
-    - Discuss failing scenarios
+- Discuss vision of a product.
+- Do we need to build from scratch or we can leverage some existing functionalities
+- Discuss about authentication and authorization (Google auth / OAuth)
+- Interact with the Product manager to understand the scope before designing the application.
+- Discuss happy scenarios.
+- Discuss edge cases.
+- Discuss failing scenarios
 
 **Identify MVP (Minimum Viable Product)**
-    - Problem -> Solution -> Build MVP -> MVP to Customers
-    - Discuss MVP phase with product manager
-    - Discuss roadmaps and divide product in milestones
-    - After MVP release there can be a slight change in design/approach to make the product better
+- Problem -> Solution -> Build MVP -> MVP to Customers
+- Discuss MVP phase with product manager
+- Discuss roadmaps and divide product in milestones
+- After MVP release there can be a slight change in design/approach to make the product better
 
 **Volume of Operations**
-    - Discuss about the end users of the product
-    - Identify QPS (Queries per second)
-    - Discuss about Load testing/Stress testing
-    - Inject analytics in application (ex: Google analytics, Sentry, NewRelic)
-    - Analytics data helps us to scale the system
+- Discuss about the end users of the product
+- Identify QPS (Queries per second)
+- Discuss about Load testing/Stress testing
+- Inject analytics in application (ex: Google analytics, Sentry, NewRelic)
+- Analytics data helps us to scale the system
 
 **SEO (Search Engine Optimization)**
-    - Crawling
-    - Use of Heading tags
-    - Semantic tags
-    - Site Ranking
-    - Sitemap
-    - Meta Keywords
-    - Organic approach vs Inorganic approach
-    - Use of alt tags
-    - 301 Redirects (bad for SEO)
-    - Robots.txt
-    - Open graph protocol (https://ogp.me/) for social graph
+- Crawling
+- Use of Heading tags
+- Semantic tags
+- Site Ranking
+- Sitemap
+- Meta Keywords
+- Organic approach vs Inorganic approach
+- Use of alt tags
+- 301 Redirects (bad for SEO)
+- Robots.txt
+- Open graph protocol (https://ogp.me/) for social graph
 
 **Component Based Design**
-    - Component wise deployment cycle (CI/CD)
-    - Monolith vs Microservice architecture
-    - Micro Frontend (independent dev & deployment for scalability)
-    - Static components vs Dynamic components 
-    - IFrame/Shell approach
+- Component wise deployment cycle (CI/CD)
+- Monolith vs Microservice architecture
+- Micro Frontend (independent dev & deployment for scalability)
+- Static components vs Dynamic components 
+- IFrame/Shell approach
 
 **State Management**
-    - How to maintain state through the application?
-    - How to manage users' data?
-    - State management Libraries (Redux, Flux, NgRX)
+- How to maintain state through the application?
+- How to manage users' data?
+- State management Libraries (Redux, Flux, NgRX)
 
 **Handling APIs**
-    - Polling (Short and Long)
-    - Web Sockets (Real-time) (ex: chat, shared editors)
-    - Batch requests
-    - GraphQL
-    - Caching GET APIs (Middleware concepts to cache response)
-    - Server-Sent Events (SSE)
+- Polling (Short and Long)
+- Web Sockets (Real-time) (ex: chat, shared editors)
+- Batch requests
+- GraphQL
+- Caching GET APIs (Middleware concepts to cache response)
+- Server-Sent Events (SSE)
 
 **Optimizing Images**
-    - Add alt attributes (Images should be descriptive for SEO)
-    - Load images based on screen size (img srcset)
-    - Image compression (ex: JPEG 2000)
-    - Image sitemaps
-    - Use SVGs for generic dimensions (in case of stretching of images)
-    - Discuss about image Sprites for icons
-    - Discuss about progressive images (ex: Medium.com)
+- Add alt attributes (Images should be descriptive for SEO)
+- Load images based on screen size (img srcset)
+- Image compression (ex: JPEG 2000)
+- Image sitemaps
+- Use SVGs for generic dimensions (in case of stretching of images)
+- Discuss about image Sprites for icons
+- Discuss about progressive images (ex: Medium.com)
 
 **Instrumentation**
-    - Measurement and tracking are key for a stable system
-    - Monitoring
-    - Error logging (for tracing)
-    - Debugging
-    - Logs/Track all events happened in the application
-    - Implement Analytics (GA)
-    - Sentry (to capture errors)
-    - Newrelic (to detect failures)
+- Measurement and tracking are key for a stable system
+- Monitoring
+- Error logging (for tracing)
+- Debugging
+- Logs/Track all events happened in the application
+- Implement Analytics (GA)
+- Sentry (to capture errors)
+- Newrelic (to detect failures)
 
 **Versioning of artifacts**
-    - Artifacts tracking (ex: Confluence)
-    - Rollback & backup mechanisms
+- Artifacts tracking (ex: Confluence)
+- Rollback & backup mechanisms
 
 **Performance Optimization Techniques**
-    - Webpack to optimized/compressed pages (Code splitting)
-    - Web Vitals (FP, LCP, CLS, etc)
-    - Lighthouse / PageSpeed Insights
-    - Fast Loading (Initial load should be fast)
-    - Smooth Opherations (Loading indicators / Light/Smooth/Meaningful animations (to avoid jerks in transitions) / Splash screens) - (dialog with light animations)
-    - Animation directions should be the same (dialog coming from bottom should close in bottom) - (smooth animation should be added in sidebars for better UX)
-    - Animation between data fetching(APIs request)
-    - Discuss about Caching - ex: API, resource cache (Browser cache / Memory / CDN / Disk Cache)
-    - Pagination vs Infinite Scroll
-    - Meaningful animation
-    - Micro interactions
+- Webpack to optimized/compressed pages (Code splitting)
+- Web Vitals (FP, LCP, CLS, etc)
+- Lighthouse / PageSpeed Insights
+- Fast Loading (Initial load should be fast)
+- Smooth Opherations (Loading indicators / Light/Smooth/Meaningful animations (to avoid jerks in transitions) / Splash screens) - (dialog with light animations)
+- Animation directions should be the same (dialog coming from bottom should close in bottom) - (smooth animation should be added in sidebars for better UX)
+- Animation between data fetching(APIs request)
+- Discuss about Caching - ex: API, resource cache (Browser cache / Memory / CDN / Disk Cache)
+- Pagination vs Infinite Scroll
+- Meaningful animation
+- Micro interactions
 
 **Internationalization (i18n) / Localization (i10n)**
-    - Localization
-    - Numeric, date and time formats
-    - Singular &  Plurals
-    - Use of currency
-    - Keyboard usage
-    - Symbols, icons and colors
-    - Text and graphics vary with different languages and religions, may be subject to misinterpretation or viewed as insensitive
-    - Varying legal requirements
+- Localization
+- Numeric, date and time formats
+- Singular &  Plurals
+- Use of currency
+- Keyboard usage
+- Symbols, icons and colors
+- Text and graphics vary with different languages and religions, may be subject to misinterpretation or viewed as insensitive
+- Varying legal requirements
 
  **Accessibility**
-    - Alt attributes
-    - Aria-labels
-    - Multi-device support, slow network speed
-    - Color contrast, semantics tags
+- Alt attributes
+- Aria-labels
+- Multi-device support, slow network speed
+- Color contrast, semantics tags
 
 **Security**
-    - MITM
-    - XSS
-    - CSRF
-    - Clickjacking
-    - Content Security Policy (CSP)
-    - CORS
+- MITM
+- XSS
+- CSRF
+- Clickjacking
+- Content Security Policy (CSP)
+- CORS
 
 **Quality assurance and control**
-    - Stable products are successful
-    - Specify standards - Code level / Artifacts level / Asset level
-    - Git Hooks (pre commit hooks, husky)
-    - Linters / Static Analyzers
-    - Unit testing
-    - Workflow testing (User level flows) (Tools - Cypress)
-    - Integration testing
-    - Automation suite
-    - Cross browsers testing
-    - Cross platform testing
+- Stable products are successful
+- Specify standards - Code level / Artifacts level / Asset level
+- Git Hooks (pre commit hooks, husky)
+- Linters / Static Analyzers
+- Unit testing
+- Workflow testing (User level flows) (Tools - Cypress)
+- Integration testing
+- Automation suite
+- Cross browsers testing
+- Cross platform testing
 
 **Governance**
-    - Controlling the workflows and protecting the assets
-    - UX Design -> Developers -> Product Managers -> UX Designing -> QA
-    - Code level governance - like PRs approval (sets standard in your team)
-    - Artifacts/Assets level governance (before go live)
-    - like Product Manager approval, Stakeholders approvals
+- Controlling the workflows and protecting the assets
+- UX Design -> Developers -> Product Managers -> UX Designing -> QA
+- Code level governance - like PRs approval (sets standard in your team)
+- Artifacts/Assets level governance (before go live)
+- like Product Manager approval, Stakeholders approvals
 
 **Experiment based release cycle**
-    - Experiment flag, which can help in the release cycle
+- Experiment flag, which can help in the release cycle
 
 **NFR (Non Functional Requirement)**
-    - Discuss about CI/CD (Docker, Pipeline)
+- Discuss about CI/CD (Docker, Pipeline)
