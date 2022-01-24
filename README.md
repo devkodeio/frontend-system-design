@@ -17,7 +17,7 @@
 
 ### What is this Frontend System Design guide about?
 
-Frontend System Design guide attempts to cover the various factors to be considered while architecting a complex large-scale frontend application from scratch. Also guide acts like a checklist that can be used as a reference for frontend system design. The guide aims to contain the breadth of the frontend systems while giving the directions to explore in depth for both individual contributors and system architects.
+Frontend System Design guide attempts to cover the various factors to be considered while architecting a complex large-scale frontend application from scratch. Also the guide acts like a checklist that can be used as a reference for frontend system design. The guide aims to contain the breadth of the frontend systems while giving the directions to explore in depth for both individual contributors and system architects.
 
 	Guide is generic and not biased towards any library or framework
 
@@ -275,7 +275,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Web Vitals (FP, LCP, CLS, etc)
 - Lighthouse / PageSpeed Insights
 - Fast Loading (Initial load should be fast)
-- Smooth Opherations (Loading indicators / Light/Smooth/Meaningful animations (to avoid jerks in transitions) / Splash screens) - (dialog with light animations)
+- Smooth Operations (Loading indicators / Light/Smooth/Meaningful animations (to avoid jerks in transitions) / Splash screens) - (dialog with light animations)
 - Animation directions should be the same (dialog coming from bottom should close in bottom) - (smooth animation should be added in sidebars for better UX)
 - Animation between data fetching(APIs request)
 - Discuss about Caching - ex: API, resource cache (Browser cache / Memory / CDN / Disk Cache)
