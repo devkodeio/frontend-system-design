@@ -14,8 +14,9 @@
 </div>
 
 <div align="center">
-	<p>Show your support by giving a ⭐ to this repo</p>
-	<a href="https://t.me/teamdevkode" target="_blank">Click here join the frontend telegram community</a>
+	<p><a href="https://t.me/teamdevkode" target="_blank">Join the frontend telegram community</a></p>
+	<p>Show your support by giving a ⭐&nbsp;&nbsp;to this repo</p>
+	To download the content as PDF, <a href="./FE_SE_Handbook.pdf" target="_blank">Click here</a>
 </div>
 
 ---
