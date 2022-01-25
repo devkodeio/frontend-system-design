@@ -350,3 +350,10 @@ Frontend System Design guide attempts to cover the various factors to be conside
 
 **NFR (Non Functional Requirement)**
 - Discuss about CI/CD (Docker, Pipeline)
+<br>
+
+---
+
+### License
+
+This repository is MIT licensed. [Read more](./LICENSE)
