@@ -55,7 +55,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Search Engine Optimization
 - CI/CD
 - User Experience
-- A/B testing
+- [A/B testing](https://philipwalton.com/articles/performant-a-b-testing-with-cloudflare-workers/)
 - MVP planning
 - Server Side Architecture
 - Security
@@ -81,16 +81,21 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Instrumentation
 - Design system
 - Routing management
-- CSS optimizations
-- Lazy loading of modules
-- Accessibility
-- Image optimizations
+- [CSS optimizations](https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS)
+- [Lazy loading of modules](https://web.dev/fast/#lazy-load-images-and-video)
+- [Accessibility](https://www.w3.org/WAI/tips/developing/)
+- [Image optimizations](https://web.dev/fast/#optimize-your-images)
 - Pagination, Debouncing, Throttling
-- Performance: FCP, LCP, TTI, CLS
+- [Performance](https://developer.mozilla.org/en-US/docs/Web/Performance): FCP, LCP, TTI, CLS
 - Versioning
 - Unit testing
 
 ---
+
+### Architecture Considerations
+
+ - [Client-side Architecture Basics](https://khalilstemmler.com/articles/client-side-architecture/introduction/)
+ - [idiomatic.js](https://github.com/rwaldron/idiomatic.js)
 
 ### High Level Design details
 
@@ -206,10 +211,10 @@ Frontend System Design guide attempts to cover the various factors to be conside
 
 <br>
 
-**SEO (Search Engine Optimization)**
+[**SEO (Search Engine Optimization)**](https://github.com/marcobiedermann/search-engine-optimization)
 - Crawling
 - Use of Heading tags
-- Semantic tags
+- [Semantic tags](https://htmlreference.io/)
 - Site Ranking
 - Sitemap
 - Meta Keywords
@@ -217,16 +222,16 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Use of alt tags
 - 301 Redirects (bad for SEO)
 - Robots.txt
-- Open graph protocol (https://ogp.me/) for social graph
+- [Open graph protocol](https://ogp.me/) for social graph
 
 <br>
 
 **Component Based Design**
 - Component wise deployment cycle (CI/CD)
 - Monolith vs Microservice architecture
-- Micro Frontend (independent dev & deployment for scalability)
+- [Micro Frontend (independent dev & deployment for scalability)](https://blog.bitsrc.io/how-we-build-micro-front-ends-d3eeeac0acfc)
 - Static components vs Dynamic components 
-- IFrame/Shell approach
+- IFrame/[Shell](https://github.com/GoogleChromeLabs/sw-precache/tree/master/app-shell-demo) approach
 
 <br>
 
@@ -243,7 +248,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Batch requests
 - GraphQL
 - Caching GET APIs (Middleware concepts to cache response)
-- Server-Sent Events (SSE)
+- [Server-Sent Events (SSE)](https://germano.dev/sse-websockets/)
 
 <br>
 
@@ -254,7 +259,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Image sitemaps
 - Use SVGs for generic dimensions (in case of stretching of images)
 - Discuss about image Sprites for icons
-- Discuss about progressive images (ex: Medium.com)
+- Discuss about progressive images (ex: Medium.com) - e.g. [blurhash](https://github.com/woltapp/blurhash)
 
 <br>
 
@@ -277,17 +282,17 @@ Frontend System Design guide attempts to cover the various factors to be conside
 <br>
 
 **Performance Optimization Techniques**
-- Webpack to optimized/compressed pages (Code splitting)
-- Web Vitals (FP, LCP, CLS, etc)
+- Webpack to optimized/compressed pages (Code splitting, [Brotli Compression](https://www.fastfwd.com/improve-http-compression-with-brotli/), [Gzip Compression](https://www.keycdn.com/support/enable-gzip-compression))
+- [Web Vitals (FP, LCP, CLS, etc)](https://10up.github.io/Engineering-Best-Practices/performance/#core-web-vitals)
 - Lighthouse / PageSpeed Insights
-- Fast Loading (Initial load should be fast)
+- [Fast Loading (Initial load should be fast)](https://web.dev/fast/)
 - Smooth Operations (Loading indicators / Light/Smooth/Meaningful animations (to avoid jerks in transitions) / Splash screens) - (dialog with light animations)
 - Animation directions should be the same (dialog coming from bottom should close in bottom) - (smooth animation should be added in sidebars for better UX)
-- Animation between data fetching(APIs request)
-- Discuss about Caching - ex: API, resource cache (Browser cache / Memory / CDN / Disk Cache)
+- Animation between data fetching(APIs request) - Skeletal Loaders, Blurhash etc
+- [Discuss about Caching - ex: API, resource cache (Browser cache / Memory / CDN / Disk Cache)](https://roadmap.sh/guides/http-caching)
 - Pagination vs Infinite Scroll
 - Meaningful animation
-- Micro interactions
+- [Micro interactions](https://userguiding.com/blog/microinteraction/)
 
 <br>
 
@@ -306,18 +311,29 @@ Frontend System Design guide attempts to cover the various factors to be conside
  **Accessibility**
 - Alt attributes
 - Aria-labels
-- Multi-device support, slow network speed
+- Multi-device support, [slow network speed](https://addyosmani.com/blog/adaptive-loading/)
 - Color contrast, semantics tags
 
 <br>
 
 **Security**
 - MITM
-- XSS
+- [XSS](https://auth0.com/blog/cross-site-scripting-xss/)
 - CSRF
 - Clickjacking
-- Content Security Policy (CSP)
+- [Content Security Policy (CSP)](https://ponyfoo.com/articles/content-security-policy-in-express-apps#to-get-started-let-s-use-report-only)
 - CORS
+- [Security headers](https://securityheaders.com/)
+- Helpful Tools
+    * [Testing your SSL web server](https://www.ssllabs.com/ssltest/analyze.html)
+    * [HTTP/2 Test](https://tools.keycdn.com/http2-test)
+    * [HTTP Header Checker](https://tools.keycdn.com/curl)
+    * [Website Speed Test](https://tools.keycdn.com/speed)
+    * [Performance Test](https://tools.keycdn.com/performance)
+    * [What Does my site cost?](https://whatdoesmysitecost.com/)
+    * [HTML5 Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html)
+    * [Production Best Practices : Security](https://expressjs.com/en/advanced/best-practice-security.html)
+    * [Web Application Vulnerabiliies Index](https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/)
 
 <br>
 
@@ -330,7 +346,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 - Workflow testing (User level flows) (Tools - Cypress)
 - Integration testing
 - Automation suite
-- Cross browsers testing
+- [Cross browsers testing](https://github.com/philipwalton/blog/blob/main/articles/learning-how-to-set-up-automated-cross-browser-javascript-unit-testing.md)
 - Cross platform testing
 
 <br>
@@ -338,7 +354,7 @@ Frontend System Design guide attempts to cover the various factors to be conside
 **Governance**
 - Controlling the workflows and protecting the assets
 - UX Design -> Developers -> Product Managers -> UX Designing -> QA
-- Code level governance - like PRs approval (sets standard in your team)
+- Code level governance - like PRs approval (sets standard in your team) - e.g. [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - Artifacts/Assets level governance (before go live)
 - like Product Manager approval, Stakeholders approvals
 
@@ -358,3 +374,4 @@ Frontend System Design guide attempts to cover the various factors to be conside
 ### License
 
 This repository is MIT licensed. [Read more](./LICENSE)
+
